@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        h1{text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>Java Script Task 1</h1>
+</body>
+<script>
+    function reverseFunction(num) {
+	let digits = Array.from(String(num), Number);
+	let reversedArray = digits.reduce((acc, digit) =>
+		[digit, ...acc], []);
+	return parseInt(reversedArray.join(''));
+    }
+
+    let num = 123456789;
+    let reversedNum = reverseFunction(num);
+    document.write("The original number was " + num+"<br>");
+    document.write("The reversed number is "+reversedNum); 
+    
+
+</script>
+</html>
