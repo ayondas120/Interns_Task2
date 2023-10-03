@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Task 4</title>
+<script type="text/javascript"> 
+function show_now() { 
+var my_time = new Date();
+document.getElementById('display').innerHTML=my_time
+}
+function show_date() { 
+var in_date = new Date();
+var str=in_date.getDate() +'/'+(in_date.getMonth()+1)+'/'+in_date.getFullYear()
+document.getElementById('display2').innerHTML=str
+}
+</script>
+<style>
+    h1{text-align: center;}
+</style>
+</head>
+<body>
+<h1>Jav Script Task 4</h1>
+<input type=button value="Show Date" onclick="show_date();"><br>
+<div id=display2></div><br>
+<input type=button value="Show Time" onclick="show_now();"><br>
+<div id=display></div><br>
+</body>
+
+</html>
